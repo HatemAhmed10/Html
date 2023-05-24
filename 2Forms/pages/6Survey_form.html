@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form Example</title>
+  </head>
+  <body>
+    <h1>Survey Form Example</h1>
+    <form action="process_survey.php" method="post">
+      <h2>About You</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      <br>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select One</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <br>
+      <h2>Survey Questions</h2>
+      <p>1. How often do you exercise?</p>
+      <label><input type="radio" name="exercise" value="daily"> Daily</label><br>
+      <label><input type="radio" name="exercise" value="weekly"> Weekly</label><br>
+      <label><input type="radio" name="exercise" value="monthly"> Monthly</label><br>
+      <label><input type="radio" name="exercise" value="rarely"> Rarely</label><br>
+      <p>2. How do you prefer to stay active?</p>
+      <label><input type="checkbox" name="activity[]" value="running"> Running</label><br>
+      <label><input type="checkbox" name="activity[]" value="cycling"> Cycling</label><br>
+      <label><input type="checkbox" name="activity[]" value="swimming"> Swimming</label><br>
+      <label><input type="checkbox" name="activity[]" value="weightlifting"> Weightlifting</label><br>
+      <label><input type="checkbox" name="activity[]" value="yoga"> Yoga</label><br>
+      <p>3. How do you track your fitness goals?</p>
+      <label><input type="radio" name="tracking" value="smartwatch"> Smartwatch</label><br>
+      <label><input type="radio" name="tracking" value="fitness app"> Fitness App</label><br>
+      <label><input type="radio" name="tracking" value="pen and paper"> Pen and Paper</label><br>
+      <label><input type="radio" name="tracking" value="none"> I don't track my goals</label><br>
+      <h2>Additional Comments</h2>
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments"></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
