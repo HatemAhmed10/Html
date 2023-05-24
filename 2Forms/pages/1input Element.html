@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form Example</title>
+  </head>
+  <body>
+    <label for="name">Name:</label>
+    <input type="text" id="name12" name="name_text" placeholder="Enter your name" required>
+    <br>
+    <label for="agree">I agree to the Terms and Conditions</label>
+    <input type="checkbox" id="agree" name="agree" required>
+    <br>
+
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <br>
+    <input type="button" value="Click Me" onclick="alert(document.getElementById('name12').value)">
+    <br>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" >
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <br>
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea>
+    <br>
+    <form action="/action_page.php">
+            <input list="browsers">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+    </form>
+    <br>
+    <form action="/action_page.php"
+    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range"  id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+   
+  </form>
+
+<br>
+<form action=""
+oninput="x.value=parseInt(a.value)">0<input type="range"  id="a" name="a" value="50">
+=
+<output name="x" for="a b" ></output>
+</form>
+
+<br>
+
+<form>
+    <input type="image" src="../assets/images/car1.png" alt="Submit" width="48" height="48">
+    </form>
+    <br>
+    <form>
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+      </form>
+
+    <br>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="custId" name="custId" value="3487">
+        <input type="submit" value="Submit">
+      </form>  
+   <br>
+      <form>
+        <label for="bdaymonth">Birthday (month and year):</label>
+        <input type="month" id="bdaymonth" name="bdaymonth">
+      </form>  
+    <br> 
+      <form>
+        <label for="quantity">Quantity (between 1 and 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+      </form>  
+<br>
+      <form>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+      </form> 
+      <br>
+      <form>
+        <label for="gsearch">Search Google:</label>
+        <input type="search" id="gsearch" name="gsearch">
+      </form>
+      <br>
+      <form>
+        <label for="appt">Select a time:</label>
+        <input type="time" id="appt" name="appt">
+      </form>
+
+      <br>
+      <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+      </form>
+</form>
+</body>
+</html>
